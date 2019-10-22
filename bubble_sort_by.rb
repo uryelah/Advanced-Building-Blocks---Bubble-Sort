@@ -16,9 +16,5 @@ def bubble_sort_by(arr)
     end
     counter += 1
   end
-  puts arr
-end
-
-bubble_sort_by %w[hi ho hello hey] do |left, right|
-  left.length - right.length
+  arr
 end
