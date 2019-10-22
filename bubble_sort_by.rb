@@ -6,7 +6,8 @@ def bubble_sort_by(arr)
   while is_unsorted
     is_unsorted = false
     arr.each_with_index do |n, i|
-      next if i + counter >= arr.length 
+      next if i + counter >= arr.length
+
       result = yield(n, arr[i + 1])
       if result.positive?
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
@@ -18,6 +19,6 @@ def bubble_sort_by(arr)
   puts arr
 end
 
-bubble_sort_by %W('hi', 'ho', 'hello', 'hey') do |left, right|
+bubble_sort_by %W[hi ho hello hey] do |left, right|
   left.length - right.length
 end
