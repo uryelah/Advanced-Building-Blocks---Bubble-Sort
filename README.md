@@ -45,6 +45,8 @@ We included another method that accepts a block to sort an array of strings by l
 
 This is also part of the Odin project curriculum https://www.theodinproject.com/courses/ruby-programming/lessons/advanced-building-blocks
 
+Edit: change linter configuration
+
 <!-- ABOUT THE PROJECT -->
 ## Requirements
 
